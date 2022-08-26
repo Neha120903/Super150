@@ -32,6 +32,7 @@ public class RotateArray {
     public static void rotate1(int []arr, int k)
     {
         int n = arr.length;
+        k=k%n;
         // 1 - last s k elements ko reverse kre h
         rangereverse(arr,n-k,n-1);
         rangereverse(arr,0,n-k-1);
