@@ -1,3 +1,5 @@
+package SlidingWindow;
+
 import java.util.Scanner;
 import java.util.Arrays;
 public class targetSum {

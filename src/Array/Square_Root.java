@@ -1,3 +1,5 @@
+package Array;
+
 public class Square_Root {
     public static void main(String[] args) {
         int n =25;
