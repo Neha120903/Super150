@@ -23,6 +23,7 @@ public class PLayingWithGoodString {
                     max=c;
             }
             System.out.print(max);
+
         }
     }
 
