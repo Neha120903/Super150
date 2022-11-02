@@ -12,15 +12,24 @@ public class SubsetProblem {
             arr[i] =s.nextInt();
         }
         int k=s.nextInt();
-        ArrayList<Integer> ans= new ArrayList<>();
-       printSubset(arr,0,0,k,ans);
+        String ans="";
+       printSubset(arr,0,k,ans);
+        System.out.println();
         System.out.println(countSubset(arr,n,k));
     }
 
-    public static void printSubset(int[]arr, int i, int sum,int k, ArrayList<Integer> ans)
+    public static void printSubset(int[]arr, int idx,int k,String ans)
     {
         // 1 2 3
-
+        if(k==0)
+        {
+            System.out.print(ans+"  ");
+            return;
+        }
+        for (int i = idx; i < arr.length ; i++) {
+            if(arr[i]<=k)
+                printSubset(arr,idx+1,k-arr[i],ans+" "+arr[i]);
+        }
 
     }
     public static int countSubset(int[]arr, int n,int sum)
