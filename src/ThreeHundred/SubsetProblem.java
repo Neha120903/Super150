@@ -16,6 +16,7 @@ public class SubsetProblem {
        printSubset(arr,0,k,ans);
         System.out.println();
         System.out.println(countSubset(arr,n,k));
+
     }
 
     public static void printSubset(int[]arr, int idx,int k,String ans)

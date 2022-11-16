@@ -1,5 +1,7 @@
 package DivideAndConquer;
 
+import java.util.Random;
+
 public class QuickSort {
     public static void main(String[] args) {
         int arr[] ={5,7,2,3,8,9,1,4};
@@ -22,6 +24,7 @@ public class QuickSort {
 
     public static int partition(int[]arr, int si, int ei)
     {
+
         int item=arr[ei];
         int pi=si;
         for (int i = si; i <ei ; i++) {
@@ -38,4 +41,5 @@ public class QuickSort {
         arr[ei] = t;
         return pi;
     }
+
 }
