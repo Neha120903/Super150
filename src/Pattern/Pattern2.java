@@ -30,7 +30,7 @@ public class Pattern2 {
             row++;
         }*/
    // pattern 9
-    /*    int row = 1;
+       int row = 1;
         int star = 1;
         int space = n-1;
         while(row<= n)
@@ -52,7 +52,7 @@ public class Pattern2 {
             star += 2;
             row++;
         }
-     */
+
 
         // Pattern 11
      /*   int row =1;
@@ -76,7 +76,7 @@ public class Pattern2 {
         }*/
 
         //Pattern 13  => mirroring is can be only done in horizontally not vertically
-        int row =1;
+       /* int row =1;
         int star = 1;
         int space = n-1;
         while(row<= 2*n-1) {
