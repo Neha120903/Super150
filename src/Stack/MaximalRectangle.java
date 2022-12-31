@@ -1,12 +1,17 @@
 package Stack;
 
 import java.util.Stack;
-
-import static Stack.Histogram.are;
-
+/*n = 4, m = 4
+M[][] = {{0 1 1 0},
+         {1 1 1 1},
+         {1 1 1 1},
+         {1 1 0 0}}*/
 public class MaximalRectangle {
     public static void main(String[] args) {
-        int[][]matrix={{1,0,},{0,1}};
+        int[][]matrix={{0, 1, 1, 0},
+                {1, 1, 1, 1},
+                {1 ,1, 1, 1},
+                {1 ,1 ,0 ,0}};
             int []ans=new int[matrix[0].length];
             int area=0;
         for (int i = 0; i < matrix.length; i++) {
@@ -26,7 +31,7 @@ public class MaximalRectangle {
             int maxarea=0;
             for(int i=0;i<arr.length;i++)
             {
-                while(!s.isEmpty() && arr[i]<arr[s.peek()]) {
+                while(!s.isEmpty() && arr[i]<arr[s.peek()]) { // getting the previous greater element
                     int h = arr[s.pop()];
                     int r = i;
                     if (s.isEmpty())
@@ -51,4 +56,18 @@ public class MaximalRectangle {
             }
             return maxarea;
         }
+
+//        public static int maxA(int[]arr)
+//        {
+//            int maxarea=0;
+//            Stack<Integer> s= new Stack<>();
+//            for (int i=0;i< arr.length;i++)
+//            {
+//                while (!s.isEmpty() && arr[s.peek()] <arr[i])
+//
+//
+//                s.push(arr[i]);
+//            }
+//            return maxarea;
+//        }
 }
