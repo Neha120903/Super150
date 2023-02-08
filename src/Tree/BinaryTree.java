@@ -128,5 +128,19 @@ public class BinaryTree {
 
         return Math.max(left,right);
     }
+    public void right(){
+        rightView(root);
+    }
+    public void rightView(Node root)
+    {
+        if(root==null)
+            return;
+        if(root.right!=null)
+        {
+            System.out.println(root.right);
+            rightView(root.right);
+        }
+    }
 }
 
+//top view bottom view vertical view lazer light view
