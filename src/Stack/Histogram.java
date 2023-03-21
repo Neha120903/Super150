@@ -5,7 +5,7 @@ import java.util.Stack;
 //divide and conquer and using 2 array
 public class Histogram {
     public static void main(String[] args) {
-        int []arr={2,3,5,4,6,1,7};
+        int []arr={2,1,5,6,2,3};
         System.out.println(are(arr));
     }
 
