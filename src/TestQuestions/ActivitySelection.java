@@ -32,6 +32,9 @@ public class ActivitySelection {
                 return o1.finish- o2.finish;
             }
         });
+        for (int i = 0; i < arr.length ; i++) {
+            System.out.println(arr[i].finish);
+        }
         System.out.print(countActivity(arr));
     }
 

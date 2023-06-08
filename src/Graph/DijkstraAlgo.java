@@ -49,7 +49,8 @@ public class DijkstraAlgo {
             {
                 if(!visited.contains(nbr))
                 {
-                    int newcost= dp.cost+map.get(dp.vtx).get(nbr);
+                    int newcost= dp.cost+map.get(dp.vtx).get(nbr);//yha hme neighbr ki cost mil rhi h
+                    System.out.println(dp.vtx+" "+map.get(dp.vtx)+"  "+map.get(dp.vtx).get(nbr));
                     pq.add(new DijkstraPair(nbr,dp.acqvtx+nbr,newcost));
                 }
             }
